@@ -19,6 +19,11 @@ dp = diff(q,p)
 dt = diff(q,t)
 dd = diff(q,d)
 
-print(dp)
-print(dt)
-print(dd)
+#イコールゼロの方程式
+s = solve([dp,dt,dd],[p,t,d])
+
+print("dp:",dp)
+print("dt:",dt)
+print("dd:",dd)
+
+print(s)
